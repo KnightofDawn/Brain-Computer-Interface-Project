@@ -1,0 +1,16 @@
+Written by Amit Sinha
+This work is based on Brain Computer Interfaces (BCI) and processing data to classify motor imagery in the brain for 2 classes.
+An implementation is created based on the BCI Competition IV work done in:
+Abdel-Hadi, Mahmoud EA, et al. "Classification of motor imagery tasks with LS-SVM in EEG-based self-paced BCI." Digital Information Processing and Communications (ICDIPC), 2015 Fifth International Conference on. IEEE, 2015.
+
+bciconfig.txt:
+This is the configuration file. All the main parameters can be controlled from this file.
+
+bcidataset.py:
+This has the class which handles dealing with the BCI Dataset IV file.
+
+preprocessing.py:
+It has all the necessary preprocessing required in the algorithm.
+
+processcontrol.py:
+It uses all the other classes to drive all the functionality.

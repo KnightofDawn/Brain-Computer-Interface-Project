@@ -1,0 +1,31 @@
+
+#SubjectID, SamplingRate, Xfilternum are passed down from preprocessing.py to bcidataset.py. Otherwise the default values are used from	the config file.
+
+#--------------------For [bcidataset.py]--------------------
+
+[BCIData]
+DataDirectory = /home/amit/data/BCI/Competition IV dat1/BCICIV_1_asc
+#TemporaryDirectory is also used in processcontrol.py
+TemporaryDirectory = /home/amit/data/BCI/temp
+#Sampling rate is used in preprocessing.py as well.
+SamplingRate = 100
+#SubjectID is used in preprocessing.py as well.
+SubjectID = b
+
+#--------------------For [preprocessing.py]--------------------
+
+[CSP]
+CovariancePeriod = 150
+SkipPeriod = 1
+#NumFilters should be equal to the number of channels
+NumFilters = 6
+
+[Filtering]
+Order = 11
+
+[ProbabilityDensity]
+NumBinsPerDim = 10
+
+[MahmoudAlgorithm]
+#Default value. It is used in bcidataset.py as well.
+Xfilternum = 3
